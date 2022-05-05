@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Morra Cinese</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />  
+</head>
+
+
+  
+
+<body>
+
+    <h1> 
+        <div id="scoreUser">Your Score: <span id="outputPlayer" > 0 </div > 
+        <div id="scorePC">PC Score: <span id="outputComputer" > 0 </div >  
+    </h1>
+    
+
+    <span class="hearts1" >
+        <img src=".\assets\cuore.png" id="heart1-player" ><br>
+        <img src=".\assets\cuore.png" id="heart2-player" ><br>
+        <img src=".\assets\cuore.png" id="heart3-player" ><br>
+        <img src=".\assets\cuore.png" id="heart4-player" ><br>
+        <img src=".\assets\cuore.png" id="heart5-player" >
+    </span>
+
+    <br>
+
+    <span class="hearts2">
+        <img src=".\assets\cuore.png" id="heart1-pc" class="hearts"><br>
+        <img src=".\assets\cuore.png" id="heart2-pc" class="hearts"><br>
+        <img src=".\assets\cuore.png" id="heart3-pc" class="hearts"><br>
+        <img src=".\assets\cuore.png" id="heart4-pc" class="hearts"><br>
+        <img src=".\assets\cuore.png" id="heart5-pc" class="hearts">
+
+    </span>
+
+    
+   
+   
+        <div id="spada" ><img src=".\assets\spada.png" width="100" height="100" alt="" data-name="spada" class="user-choice" id="spada" onclick="userchoice(0)"; ></div>
+        <div id="scudo2"><img src="assets/scudo.png" width="100" height="100" alt="" data-name="scudo" id="scudo2" class="pc-choice"></div>
+
+        <div id="arco" ><img src=".\assets\arco.png" width="100" height="100" alt="" data-name="arco" class="user-choice" id="arco" onclick="userchoice(1)";></div>
+        <div id="arco2"><img src="assets/arco.png" width="100" height="100" alt="" data-name="arco" id="arco2" class="pc-choice"></div>
+
+        <div id="scudo" ><img src=".\assets\scudo.png" width="100" height="100" alt="" data-name="scudo" class="user-choice" id="scudo" onclick="userchoice(2)";></div>
+        <div id="spada2"><img src="assets/spada.png" width="100" height="100" alt="" data-name="spada" id="spada2" class="pc-choice"></div>
+        
+    
+
+    <div id="winner"> FAI LA TUA MOSSA! </div>
+
+
+        <div id="banner1" > </div>
+        <div id="banner2" > </div>
+
+        
+
+    <script src="morracinese.js"></script>
+
+        
+</body>
+</html>

@@ -1,0 +1,376 @@
+@keyframes bounce {
+  from { margin-top: 20px; }
+  to { margin-top: 23px; }
+}
+
+@media only screen and (max-width: 1000px) {
+    #bg{ position:center;}
+  }
+
+  @keyframes example1 {
+    0%   {background-color: rgb(0, 255, 21);}
+    25%  {background-color: rgb(0, 255, 128);}
+    50%  {background-color: rgb(3, 202, 202);}
+    100% {background-color: rgb(0, 128, 32);}
+  }
+  @keyframes example2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: rgb(255, 166, 0);}
+    100% {background-color: rgb(184, 72, 8);}
+  }
+  
+
+body {
+    font-family: monspace;
+    text-align: center;
+    font-size: 3rem;
+}
+
+html { 
+  background: url(./assets/background.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+    font-family: "Pokemon GB";
+    src: url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.eot?") format("eot"),
+         url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.woff") format("woff"),
+         url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.ttf") format("truetype"),
+         url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.svg#PokemonGB") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  #scorePC {
+        font-family:"Pokemon GB";
+        font-weight:1500;
+        font-style: normal;
+        display:inline;
+        position:absolute;
+        top:5%;
+        right:5%;
+        text-align: center;
+        text-shadow: 0 0 3px #000000;
+        opacity: 80%;
+        font-size: 2.3rem;
+        border-radius: 2px;
+        padding: 4rem;
+        width: 14rem;
+        height: 3rem;
+        margin: auto;
+        background: #bd2116;
+        border: 1px solid white;
+        box-shadow: 0 1px 0 1px black,
+                    inset 0 1px 0 1px black,
+                    0 0 0 1px black,
+                    inset 0 0 0 1px black;
+                    filter: drop-shadow(5px 5px 2px #bd2116);
+  }
+
+  #scoreUser {
+    font-family:  "Pokemon GB";
+    font-weight: 1500;
+    font-style: normal;
+    display:inline;
+    position:absolute;
+    top:5%;
+    left:5%;
+    text-align: center;
+    text-shadow: 0 0 3px #000000;
+    opacity: 80%;
+    font-size: 2.3rem;
+    border-radius: 2px;
+    padding: 4rem;
+    width: 14rem;
+    height: 3rem;
+    margin: auto;
+    background: #16bd1e;
+    border: 1px solid white;
+    box-shadow: 0 1px 0 1px black,
+                inset 0 1px 0 1px black,
+                0 0 0 1px black,
+                inset 0 0 0 1px black;
+    filter: drop-shadow(5px 5px 2px #16bd1e);
+
+}
+
+  #score > i {
+    border: 5px solid transparent;
+    border-top-color: black;
+    margin-top: 23px;
+    animation: bounce 0.5s ease-in-out 0 infinite alternate;
+
+  }
+
+  #spada{
+    position:absolute;
+    top:30%;
+    left:5%;
+  }
+  #scudo2{
+    position:absolute;
+    top:30%;
+    right:5%;
+  }
+
+  #arco{
+    position:absolute;
+    top:50%;
+    left:5%;
+  }
+  #arco2{
+    position:absolute;
+    top:50%;
+    right:5%;
+  }
+
+  #scudo{
+    position:absolute;
+    top:70%;
+    left:5%;
+  }
+  #spada2{
+    position:absolute;
+    top:70%;
+    right:5%;
+  }
+
+  .user-choice{
+    position:absolute;
+    left:5%;
+    max-height: 50rem;
+    size: 25%;
+    filter: drop-shadow(5px 5px 2px #16bd1e);
+}
+
+.pc-choice{
+
+  filter: drop-shadow(5px 5px 2px #bd2116);
+}
+
+  .user-choice:hover{
+    transform: rotate(-0.05turn) scale(1.4);
+    transition: all 0.8s;
+}
+
+.choices img{
+  position:absolute;
+  top:10%;
+ 
+
+}
+
+#spada img{
+  position:absolute;
+  top:30%;
+}
+
+#arco img{
+  position:absolute;
+  top:50%;
+}
+
+#scudo img{
+  position:absolute;
+  top:70%;
+}
+
+.pc-choice{
+  position:absolute;
+  right:5%;
+
+}
+      
+
+#heart1-player{
+
+  position:absolute;
+  top:30%;
+  height:5rem;
+  left:20%;
+  filter: drop-shadow(5px 5px 2px #16bd1e);
+}
+
+#heart2-player{
+
+  position:absolute;
+  top:40%;
+  height:5rem;
+  left:20%;
+  filter: drop-shadow(5px 5px 2px #16bd1e);
+}
+
+#heart3-player{
+
+  position:absolute;
+  top:50%;
+  height:5rem;
+  left:20%;
+  filter: drop-shadow(5px 5px 2px #16bd1e);
+}
+
+#heart4-player{
+
+  position:absolute;
+  top:60%;
+  height:5rem;
+  left:20%;
+  filter: drop-shadow(5px 5px 2px #16bd1e);
+}
+
+#heart5-player{
+
+  position:absolute;
+  top:70%;
+  height:5rem;
+  left:20%;
+  filter: drop-shadow(5px 5px 2px #16bd1e);
+}
+
+
+#heart1-pc{
+
+  position:absolute;
+  top:30%;
+  height:5rem;
+  right:20%;
+  filter: drop-shadow(5px 5px 2px #bd2116);
+}
+
+#heart2-pc{
+
+  position:absolute;
+  top:40%;
+  height:5rem;
+  right:20%;
+  filter: drop-shadow(5px 5px 2px #bd2116);
+}
+
+#heart3-pc{
+
+  position:absolute;
+  top:50%;
+  height:5rem;
+  right:20%;
+  filter: drop-shadow(5px 5px 2px #bd2116);
+}
+
+#heart4-pc{
+
+  position:absolute;
+  top:60%;
+  height:5rem;
+  right:20%;
+  filter: drop-shadow(5px 5px 2px #bd2116);
+}
+
+#heart5-pc{
+
+  position:absolute;
+  top:70%;
+  height:5rem;
+  right:20%;
+  filter: drop-shadow(5px 5px 2px #bd2116);
+}
+
+
+#winner{
+  
+  position:relative;
+  bottom:-15rem;
+  font-family:  "Pokemon GB";
+  font-weight:1500;
+  font-style: normal;
+  text-shadow: 0 0 3px #000000;
+  text-align: center;
+  opacity: 80%;
+  width: 30rem;
+  height: 3rem;
+  margin:auto;
+  font-size: 2.3rem;
+ 
+  display: table; 
+  margin: 1.5px auto 1.5px auto; 
+  padding:5px;
+  background: white;
+      border: 2px solid white;
+      box-shadow: 0 1px 0 1px black,
+                  inset 0 1px 0 1px black,
+                  0 0 0 1px black,
+                  inset 0 0 0 1px black;
+}
+
+
+
+#banner1{
+  position:absolute;
+  bottom:40%;
+  left:25%;
+  right:25%;
+  font-family:  "Pokemon GB";
+  font-size:2rem;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 0 0 3px #000000;
+  text-align: center;
+  opacity: 80%;
+  width: 30rem;
+  height: 3rem;
+  min-height: 70px;
+  display: table; 
+  margin: 1.5px auto 1.5px auto; 
+  padding:5px;
+  background: rgb(12, 240, 5);
+      border: 2px solid rgb(19, 231, 0);
+      box-shadow: 0 1px 0 1px black,
+                  inset 0 1px 0 1px black,
+                  0 0 0 1px black,
+                  inset 0 0 0 1px black;
+  animation-name: example1;   
+  animation-duration: 6s;             
+}
+
+
+#banner2{
+  position:absolute;
+  bottom:40%;
+  left:25%;
+  right:25%;
+  font-family:  "Pokemon GB";
+  font-size:2rem;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 0 0 3px #000000;
+  text-align: center;
+  opacity: 80%;
+  width: 30rem;
+  height: 3rem;
+  min-height: 70px;
+  display: table; 
+  margin: 1.5px auto 1.5px auto; 
+  padding:5px;
+  background: rgb(170, 32, 22);
+      border: 2px solid rgb(212, 13, 6);
+      box-shadow: 0 1px 0 1px black,
+                  inset 0 1px 0 1px black,
+                  0 0 0 1px black,
+                  inset 0 0 0 1px black;
+  animation-name: example2;      
+  animation-duration: 6s;          
+
+}
+
+#score > i {
+  border: 5px solid transparent;
+  border-top-color: black;
+  margin-top: 23px;
+  animation: bounce 0.5s ease-in-out 0 infinite alternate;
+
+}
+
