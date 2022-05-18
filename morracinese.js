@@ -43,6 +43,7 @@ function userchoice(scelta){
     var choice = ['spada', 'arco', 'scudo'];
     const x = choice.indexOf(choice[scelta]);
     const y= choice.indexOf(choice[Math.floor(Math.random() * choice.length)]); /*PC choice is randomly generated*/
+                                   /*This bit generates a number between 0 and 2 */
 
     banner1.style.display = 'none'; 
     banner2.style.display = 'none'; 
@@ -75,7 +76,8 @@ function userchoice(scelta){
         }
     }
 
-    /*cycles to hide choices different from the selected one*/
+    /*cycles to hide choices different from the selected one and avoid the user from interacting with the other choices*/
+
 
     if(y==0){
         document.getElementById("arco2").style.opacity = '0';
